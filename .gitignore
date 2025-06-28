@@ -10,3 +10,6 @@ obj/
 *.o
 *.out
 *.log
+
+# vs code config files
+.vscode/
