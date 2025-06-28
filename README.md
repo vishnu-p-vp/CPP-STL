@@ -1,16 +1,16 @@
 C++ STL is generic collection of class templates & algorithms.
 It allows to easily implement Standard DS like Stacks, queues & lists.
--------------------------------------------------------------------------------------------------------
+
 STL has 
 - Containers,
 - iterators
 - algorithms
--------------------------------------------------------------------------------------------------------
+
 C++ STL has following Constructs/Containers grouped into 3 categories:
 ⅰ) Sequences: Vectors, lists etc (array, dequeue, forward_list)
 ⅱ) container adaptors : Stacks, Queues, Priority Queues etc
 iii) Associative containers: Bitsets, Maps, Multimaps, Sets, Multisets, etc (unordered set, unordered multiset, unordered map, unordered multimap)
--------------------------------------------------------------------------------------------------------
+
 Iterators in C++ are like pointers, 
 Dereferencing uring *
 
@@ -29,7 +29,21 @@ Types
 - Reverse iterators
 - Bidienctional iterators
 - Random access iterators
--------------------------------------------------------------------------------------------------------
+
+Iterator Power Hierarchy:
+Forward, Reverse < Bidirectional < Random Access
+
+| **Containers**           | **Iterators Supported** | **Iterator Type** |
+| ------------------------ | ----------------------- | ----------------- |
+| **Vectors**              | Random access iterators | Random Access     |
+| **List**                 | Bidirectional           | Bidirectional     |
+| **Deque**                | Random access iterators | Random Access     |
+| **Map, Multimaps**       | Bidirectional           | Bidirectional     |
+| **Sets, Multisets**      | Bidirectional           | Bidirectional     |
+| **Stacks**               | N/A                     | N/A               |
+| **Queue, PriorityQueue** | N/A                     | N/A               |
+
+
 1. Vector
 2. List
 3. Priority Queue
