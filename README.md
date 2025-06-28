@@ -7,9 +7,9 @@ STL has
 - algorithms
 
 C++ STL has following Constructs/Containers grouped into 3 categories:
-ⅰ) Sequences: Vectors, lists etc (array, dequeue, forward_list)
-ⅱ) container adaptors : Stacks, Queues, Priority Queues etc
-iii) Associative containers: Bitsets, Maps, Multimaps, Sets, Multisets, etc (unordered set, unordered multiset, unordered map, unordered multimap)
+-ⅰ) Sequences: Vectors, lists etc (array, dequeue, forward_list)
+-ⅱ) container adaptors : Stacks, Queues, Priority Queues etc
+-iii) Associative containers: Bitsets, Maps, Multimaps, Sets, Multisets, etc (unordered set, unordered multiset, unordered map, unordered multimap)
 
 Iterators in C++ are like pointers, 
 Dereferencing uring *
