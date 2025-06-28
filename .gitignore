@@ -1,0 +1,12 @@
+# Ignore all .exe files
+*.exe
+
+# Ignore folders
+build/
+bin/
+obj/
+
+# Other common ignores
+*.o
+*.out
+*.log
