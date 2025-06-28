@@ -2,7 +2,7 @@ C++ STL is generic collection of class templates & algorithms.
 It allows to easily implement Standard DS like Stacks, queues & lists.
 
 STL has 
-- Containers,
+- Containers
 - iterators
 - algorithms
 
@@ -12,7 +12,7 @@ C++ STL has following Constructs/Containers grouped into 3 categories:
 - iii) Associative containers: Bitsets, Maps, Multimaps, Sets, Multisets, etc (unordered set, unordered multiset, unordered map, unordered multimap)
 
 Iterators in C++ are like pointers, 
-Dereferencing uring *
+dereferencing uring *
 
 Syntax:
 std :: class_name <template_paramuters> :: iterator_name;
