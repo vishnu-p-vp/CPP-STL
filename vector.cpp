@@ -90,7 +90,7 @@ int main(){
     // binary_search(), upper_bound(), lower_bound() ====>  (upper - lower) => if sorted, Difference gives the count of occurrences of target value passed
     // count(), count_if(), unary predicate
     // find(), find_if()
-    // unique(), unique_copy ---> different   {1,1,2,2,3,3,3,1} -> {1,2,3,1} = i==j  ---> using binary predicate change i!=j, i<=j,......
+    // unique(), unique_copy() ---> different   {1,1,2,2,3,3,3,1} -> {1,2,3,1} = i==j  ---> using binary predicate change i!=j, i<=j,......
     // reverse(), reverse_copy()
     // transform(), rotate(), rotate_copy()
     // random_sample(), random_shuffle()
