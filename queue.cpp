@@ -8,6 +8,8 @@
 // swap()
 // No clear() xxxxxxxxxxxxxx
 
+// back() also present
+
 #include<iostream>
 #include<queue>
 
@@ -35,6 +37,8 @@ int main()
 
     cout<<"size: "<<q.size();
     cout<<"\n Front: "<<q.front();
+    q.pop();
+    cout<<"\n Back: "<<q.back();
 
     printQ(q);
     cout<<endl<<boolalpha<<"Is queue empty: "<<q.empty();
