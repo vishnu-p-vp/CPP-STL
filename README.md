@@ -1,4 +1,4 @@
-notes
+<!-- notes
 - STL-notes.md
 - Container-adapters-notes.md
 
@@ -11,11 +11,9 @@ notes
    - some_generic_algo 
    
 4. Stack
-5. Queue
+5. Queue -->
 
 # 🚀 C++ STL Practice Repository
-
-This repository contains my hands-on practice and notes for learning the **C++ Standard Template Library (STL)**. The focus is on understanding and applying STL components through simple, self-contained `.cpp` examples and written notes.
 
 ---
 
