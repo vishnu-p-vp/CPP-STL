@@ -30,6 +30,8 @@ Types
 - Bidienctional iterators
 - Random access iterators
 
+cbegin, cend, crbegin, crend -> constant iterators (can't change the value it is pointing to)
+
 Iterator Power Hierarchy:
 Forward, Reverse < Bidirectional < Random Access
 
