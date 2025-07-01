@@ -40,6 +40,7 @@
 4. ✅ **Stack**
 5. ✅ **Queue**
 6. ✅ **Deque**
+    - Pair
 
 ---
 
