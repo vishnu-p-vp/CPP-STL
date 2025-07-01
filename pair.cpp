@@ -52,10 +52,24 @@
 // pair<int, int> g4[g3);                    copy of g3
 // pair<int, char> g5 = make_pair(1, 'a');   Using make_pair()
 
+// in pairs <, >, == values are overloaded
+// if(p1<p2) --> checks first element of the pair returns true if (p1.first < p2.first)
+// == --> checks both the values
+
+// if v is a vector of pairs (vector<pair<int,int>> v;)
+// sort(v.begin(), v.end());  ---->   sort the vector by the first element of the pair 
+
 #include<iostream>
 #include<vector>
+#include <algorithm>
 
 using namespace std;
+
+bool sortBySecondValue(const pair<int,int> &a,const pair<int,int> &b)
+{
+    return (a.second>b.second); // descending order
+    // return (a.second<b.second); // ascending order
+}
 
 int main()
 {
@@ -77,7 +91,14 @@ int main()
     {
         cout << i.first << " , " << i.second <<endl;
     }
-    
+
+    sort(v.begin(), v.end());
+    sort(v.begin(), v.end(), sortBySecondValue);
+    cout<<"Vector of pairs after sorting:\n";
+    for (const auto i : v)
+    {
+        cout << i.first << " , " << i.second <<endl;
+    }
     
     return 0;
 }
