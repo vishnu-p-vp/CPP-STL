@@ -24,6 +24,9 @@
 - 🗒️ [`STL-notes.md`](notes/STL-notes.md)  
   Overview of STL: containers, iterators, generic algorithms.
 
+- 🗒️ [`Sequential-containers.md`](notes/Sequential-containers.md)  
+  Notes on STL sequential containers: `arry`, `vector`, `list`, `deque`, and `forward_list`.
+
 - 🗒️ [`Container-adapters-notes.md`](notes/Container-adapters-notes.md)  
   Notes on STL container adapters: `stack`, `queue`, and `priority_queue`.
 
@@ -41,6 +44,7 @@
 5. ✅ **Queue**
 6. ✅ **Deque**
     - Pair
+    - Triplet
 
 ---
 

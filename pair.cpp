@@ -49,7 +49,7 @@
 // pair<int, char> g1;                       default
 // pair<int, char> g2(1, 'a');               initialized, different data type
 // pair<int, int> g3(1, 10);                 initialized, same data type
-// pair<int, int> g4[g3);                    copy of g3
+// pair<int, int> g4(g3);                    copy of g3
 // pair<int, char> g5 = make_pair(1, 'a');   Using make_pair()
 
 // in pairs <, >, == values are overloaded
@@ -69,6 +69,15 @@ bool sortBySecondValue(const pair<int,int> &a,const pair<int,int> &b)
 {
     return (a.second>b.second); // descending order
     // return (a.second<b.second); // ascending order
+}
+
+template <class T1, class T2>    // template <class Pair>
+void displayVecPair(const vector<pair<T1,T2>> &v)   // (const vector<Pair> &v)
+{
+    for (const auto i : v)
+    {
+        cout << i.first << " , " << i.second <<endl;
+    }
 }
 
 int main()
@@ -95,10 +104,7 @@ int main()
     sort(v.begin(), v.end());
     sort(v.begin(), v.end(), sortBySecondValue);
     cout<<"Vector of pairs after sorting:\n";
-    for (const auto i : v)
-    {
-        cout << i.first << " , " << i.second <<endl;
-    }
+    displayVecPair(v);
     
     return 0;
 }
