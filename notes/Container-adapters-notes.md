@@ -1,4 +1,4 @@
-Container Adapters
+## Container Adapters
 
 They are not directly implemented using arrays or linked lists—instead, the underlying container decides whether an array-like or linked-list-like structure is used.
 They use other containers (like deque, vector, or list) as their internal data structure and adapt the interface of those containers to behave like a stack, queue, or priority queue.
