@@ -12,7 +12,7 @@
 // ----------------------------------------------------------------------
 // Comparator -> if we want to change the default order i.e., descending order(larger elements first) priority
 // along with the comparator we have to give the container also 
-// if no comparator, by default vector comparator is used -> priority queue is "container adapter" (adapts the underlying container)
+// if no comparator, by default vector container is used -> priority queue is "container adapter" (adapts the underlying container)
 // The comparator is used during heap operations, it's about maintaining the heap structure, which is not a regular linear queue.
 
 // Example 1 for comparator:
