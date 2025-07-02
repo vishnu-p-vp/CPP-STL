@@ -44,3 +44,25 @@ Forward, Reverse < Bidirectional < Random Access
 | **Sets, Multisets**      | Bidirectional           | Bidirectional     |
 | **Stacks**               | N/A                     | N/A               |
 | **Queue, PriorityQueue** | N/A                     | N/A               |
+
+
+### **Are Iterators Used Only for Accessing Elements?**
+
+Iterators in C++ STL are primarily used for **accessing** and **traversing** elements, but they are **not limited** to just access. Here's how they are used:
+
+1. **Element Access**:
+
+   * Iterators can access elements through dereferencing (`*iterator`) or by using the arrow operator (`iterator->member`).
+
+2. **Element Modification**:
+
+   * **Non-const iterators** can also be used to **modify** the container's elements. For example, you can assign a new value to an element using `*it = new_value`.
+
+3. **Algorithm Operations**:
+
+   * Iterators are commonly used with STL algorithms (like `std::sort`, `std::find`, etc.) to perform various operations on containers.
+
+4. **Container Traversal**:
+
+   * They are primarily used for traversing the container (e.g., using a loop with `begin()` and `end()` to iterate over all elements).
+
