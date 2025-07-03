@@ -42,3 +42,53 @@
 // have specific ordering (default: "<" ascending)
 // the value is itself the key --> .find(value)
 // Implemented using BST
+
+#include<iostream>
+#include <set>
+
+using namespace std;
+
+template <class T>
+void printSet(const set<T>& s)
+{
+    for(const auto i:s)
+    {
+        cout<<i<<" ";
+    }
+    cout<<endl;
+}
+
+template <class T>
+void printSetByIterators(const set<T>& s)
+{
+    for (auto it = s.begin(); it != s.end(); it++)
+    {
+        cout<<*it<<" ";
+    }
+    cout<<endl;
+}
+
+int main()
+{
+    set<int> s1;
+    set<int> s2 = {5,3,8,9};
+
+    s1.insert(3);
+    s1.insert(1);
+    s1.insert(2);
+    printSet(s1);
+
+    s1.insert(3);   // inserting 3 again(duplicate value) -> don't give error but will not be inserted
+    printSetByIterators(s1);
+
+    s1.erase(2);
+    printSet(s1);
+
+    auto iteratorToDelExceptLastOneEle = s1.end();
+    advance(iteratorToDelExceptLastOneEle, -1);
+    s1.erase(s1.begin(),iteratorToDelExceptLastOneEle);  
+    // you cannot do s.erase(s.begin(), s.end() - 2) in std::set, because: set iterators are bidirectional iterators, not random access iterators.
+    printSet(s1);
+
+    return 0;
+}
