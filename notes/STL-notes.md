@@ -67,16 +67,16 @@ Iterators in C++ STL are primarily used for **accessing** and **traversing** ele
    * They are primarily used for traversing the container (e.g., using a loop with `begin()` and `end()` to iterate over all elements).
 
 
-Bidirectional iterators do not support the <, >, <=, or >= comparison operators. (Random access iterator supports)
-std::set<T>& s;   -->   set supports bidirectional iterator
-❌ for (auto it = s.begin(); it < s.end(); it++)
-✅ for (auto it = s.begin(); it != s.end(); ++it) 
+Bidirectional iterators do not support the <, >, <=, or >= comparison operators. (Random access iterator supports)  
+`std::set<T>& s;`   -->   set supports bidirectional iterator  
+❌ `for (auto it = s.begin(); it < s.end(); it++)`  
+✅ `for (auto it = s.begin(); it != s.end(); ++it)`    
 
-vector<int> a;
-✅ for(auto it=a.begin(); it!=a.end(); it++)  ---> used for all containers that supports iterators ✅✅✅✅
-✅ for(auto it=a.begin(); it < a.end(); it++)
-      ✔️ Works for: vector, deque, array (random access iterators)
-      ❌ Fails for: list, set, map (compiler error)
-❌ for(auto it=a.rbegin(); it < a.rend(); it++)
-      rbegin() and rend() return reverse iterators.
-      std::vector::reverse_iterator is a random access iterator, so it technically supports <, but the logic is inverted.
+`vector<int> a;`  
+✅ `for(auto it=a.begin(); it!=a.end(); it++)`  ---> used for all containers that supports iterators ✅✅✅✅  
+✅ `for(auto it=a.begin(); it < a.end(); it++)`  
+      ✔️ Works for: vector, deque, array (random access iterators)  
+      ❌ Fails for: list, set, map (compiler error)  
+❌ `for(auto it=a.rbegin(); it < a.rend(); it++)`  
+      rbegin() and rend() return reverse iterators.  
+      std::vector::reverse_iterator is a random access iterator, so it technically supports <, but the logic is inverted.  
