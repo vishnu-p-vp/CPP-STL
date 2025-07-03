@@ -75,8 +75,8 @@ Bidirectional iterators do not support the <, >, <=, or >= comparison operators.
 `vector<int> a;`  
 ✅ `for(auto it=a.begin(); it!=a.end(); it++)`  ---> used for all containers that supports iterators ✅✅✅✅  
 ✅ `for(auto it=a.begin(); it < a.end(); it++)`  
-      ✔️ Works for: vector, deque, array (random access iterators)  
-      ❌ Fails for: list, set, map (compiler error)  
+`      ✔️ Works for: vector, deque, array (random access iterators)`  
+`      ❌ Fails for: list, set, map (compiler error)`  
 ❌ `for(auto it=a.rbegin(); it < a.rend(); it++)`  
-      rbegin() and rend() return reverse iterators.  
-      std::vector::reverse_iterator is a random access iterator, so it technically supports <, but the logic is inverted.  
+`      rbegin() and rend() return reverse iterators.`  
+`      std::vector::reverse_iterator is a random access iterator, so it technically supports <, but the logic is inverted.`  
